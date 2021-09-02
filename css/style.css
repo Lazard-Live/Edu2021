@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../font/Montserrat-regular.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../font/Montserrat-italic.ttf") format("ttf");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../font/Montserrat-bold.ttf") format("ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../font/Montserrat-bolditalic.ttf") format("ttf");
+    font-weight: bold;
+    font-style: italic;
+}
+
+:root {
+    --font-primary: "Montserrat", sans-serif;
+    --color-primary: #AE7C78;
+    --color-primary-active: #7a5754;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-primary);
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    flex: 0 auto;
+    width: 100%;
+}
+
+.container_menu {
+    margin-top: 26px;
+    border-top: 1px solid var(--color-primary);
+    border-bottom: 1px solid var(--color-primary);
+}
+
+.container_maps {
+    max-width: 100%;
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 62px;
+}
+
+.nav_link {
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.nav_link:hover {
+    color: var(--color-primary-active);
+}
+
