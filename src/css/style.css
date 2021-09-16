@@ -149,7 +149,7 @@ body {
   display: grid;
   gap: 10px;
   grid-template-areas: "A B C";
-  grid-template-columns: 384px 1tr 1tr;
+  grid-template-columns: auto 386px 386px;
 }
 
 .box_1 {
