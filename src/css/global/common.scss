@@ -6,14 +6,10 @@ body {
   font-family: var(--font-primary);
   line-height: 1.5;
   font-size: 16px;
+  height: 100%;
   font-style: normal;
   font-weight: normal;
   min-height: 100vh;
-}
-
-.header {
-  z-index: 1;
-  margin-top: 25px;
 }
 
 .content {
@@ -34,10 +30,20 @@ body {
 }
 
 .section {
+  margin: 0 auto;
   max-width: 1200px;
-  margin: 0 120px;
-}
 
-.content .section {
-  margin: 40px 120px;
+  &__first {
+    position: relative;
+    height: 493px;
+
+    .row {
+      align-content: center;
+    }
+
+  }
+
+  .content & {
+    margin: 40px auto;
+  }
 }

@@ -1,13 +1,28 @@
-.text_top {
-  margin: 0;
-  font-family: var(--font-secondary);
-  font-weight: normal;
-  font-style: normal;
-  color: var(--color-primary);
-  font-size: 44px;
-}
+.header {
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  margin-top: 25px;
 
-.text_top span {
-  font-weight: normal;
-  font-style: italic;
+  &__text {
+    margin: 0;
+    font-family: var(--font-secondary);
+    font-weight: normal;
+    font-style: normal;
+    color: var(--color-primary);
+    font-size: 44px;
+    justify-content: center;
+  }
+
+  &__img {
+    position: absolute;
+
+    &_top {
+      top: 0;
+    }
+
+    &_bottom {
+      bottom: 0;
+    }
+  }
 }

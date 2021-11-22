@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <title>Магазин цветов</title>
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
@@ -16,9 +16,9 @@
             <li><a href="#" class="nav__link">Отзывы</a></li>
             <li>
               <a class="nav__logo" href="#">
-                  <svg class="nav__svg">
-                    <use xlink:href="images/sprite.svg#logo"></use>
-                  </svg>
+                <svg class="nav__svg">
+                  <use xlink:href="images/sprite.svg#logo"></use>
+                </svg>
               </a>
             </li>
             <li><a href="#" class="nav__link">Спецпредложения</a></li>
@@ -30,21 +30,26 @@
     </header>
     <main class="content">
       <div class="container">
-        <div class="section">
+        <div class="section section__first">
           <div class="row">
-            <div class="col-4">
+            <div class="col">
               <div>
-                <h1 class="text_top">Авторские букеты <i>в Петербурге</i></h1>
-                <div class="subtext_top">
-                  Оригинальные свежие букеты с доставкой по всему городу
-                </div>
+                <h1 class="header__text">
+                  Авторские букеты <i>в Петербурге</i></h1>
+                  <div class="subtext_top">
+                    Оригинальные свежие букеты с доставкой по всему городу
+                  </div>
               </div>
             </div>
-            <div class="col-4">
-              <img alt="Фото 1" src="../images/1.jpg" />
+            <div class="col">
+              <div class="header__img header__img_bottom">
+                <img alt="Фото 1" src="../images/1.jpg" />
+              </div>
             </div>
-            <div class="col-4">
-              <img alt="Фото 2" src="../images/2.jpg" />
+            <div class="col">
+              <div class="header__img">
+                <img alt="Фото 2" src="../images/2.jpg" />
+              </div>
             </div>
           </div>
         </div>

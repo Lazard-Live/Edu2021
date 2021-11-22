@@ -1,0 +1,9 @@
+.root {
+  &__content {
+    flex: 1 0 auto;
+  }
+
+  &_text-center {
+    text-align: center;
+  }
+}
