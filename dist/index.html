@@ -15,10 +15,10 @@
             <li><a href="#" class="nav__link">Доставка и оплата</a></li>
             <li><a href="#" class="nav__link">Отзывы</a></li>
             <li>
-              <a href="#">
-                <svg class="nav__logo">
-                  <use xlink:href="svg/sprite.svg#logo"></use>
-                </svg>
+              <a class="nav__logo" href="#">
+                  <svg class="nav__svg">
+                    <use xlink:href="images/sprite.svg#logo"></use>
+                  </svg>
               </a>
             </li>
             <li><a href="#" class="nav__link">Спецпредложения</a></li>
@@ -28,22 +28,23 @@
         </div>
       </div>
     </header>
-
     <main class="content">
       <div class="container">
         <div class="section">
-          <div class="grid">
-            <div class="box_1">
+          <div class="row">
+            <div class="col-4">
               <div>
-                <h1 class="text_top">Авторские букеты <br><span>в Петербурге</span></h1>
-                <div class="subtext_top">Оригинальные свежие букеты с доставкой по всему городу</div>
+                <h1 class="text_top">Авторские букеты <i>в Петербурге</i></h1>
+                <div class="subtext_top">
+                  Оригинальные свежие букеты с доставкой по всему городу
+                </div>
               </div>
             </div>
-            <div class="box_2">
-              <img alt="Фото 1" src="img/1.jpg" />
+            <div class="col-4">
+              <img alt="Фото 1" src="../images/1.jpg" />
             </div>
-            <div class="box_3">
-              <img alt="Фото 2" src="img/2.jpg" />
+            <div class="col-4">
+              <img alt="Фото 2" src="../images/2.jpg" />
             </div>
           </div>
         </div>
@@ -53,10 +54,10 @@
     <footer class="footer container container_bg_primary">
       <div class="section">
         <ul class="nav nav_alternative">
-          <li class="nav__logo">
-            <a hreflang="#">
-              <svg>
-                <use xlink:href="svg/sprite.svg#logo-white"></use>
+          <li>
+            <a class="nav__logo" href="#">
+              <svg class="nav__svg">
+                <use xlink:href="images/sprite.svg#logo_white"></use>
               </svg>
             </a>
           </li>
@@ -74,7 +75,7 @@
               </a>
               <a class="social__link">
                 <svg class="social__icon">
-                  <use xlink:href="svg/sprite.svg#fb"></use>
+                  <use xlink:href="images/sprite.svg#fb"></use>
                 </svg>
               </a>
               <a class="social__link">
