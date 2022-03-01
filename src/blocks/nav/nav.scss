@@ -4,9 +4,13 @@
   display: flex;
   list-style-type: none;
   justify-content: space-around;
-  align-items: center;
+  position: relative;
   flex-wrap: wrap;
-  height: 63px;
+
+  li {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 
   li:not(:last-child) {
     margin-right: 10px;
@@ -24,7 +28,7 @@
 
   &__logo {
     display: block;
-    height: 32px;
+    height: 60px;
     width: 100px;
     cursor: pointer;
   }
@@ -35,13 +39,10 @@
   }
 
   &_alternative {
-    height: 97px;
-
     .nav__link {
       color: var(--color-white);
-      height: 20px;
+      height: 100%;
     }
-
     .nav__link:hover {
       color: var(--color-primary-active);
     }

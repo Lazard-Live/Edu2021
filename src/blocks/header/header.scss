@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   z-index: 1;
-  margin-top: 25px;
+  margin: 25px 0 40px;
 
   &__text {
     margin: 0;
@@ -12,6 +12,11 @@
     color: var(--color-primary);
     font-size: 44px;
     justify-content: center;
+  }
+
+  &_line {
+    border-top: 1px solid var(--color-primary);
+    border-bottom: 1px solid var(--color-primary);
   }
 
   &__img {
