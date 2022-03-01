@@ -9,45 +9,51 @@
   </head>
   <body>
     <header class="header header_line">
-        <div class="section">
-          <ul class="nav">
-            <li><a href="#" class="nav__link">Каталог</a></li>
-            <li><a href="#" class="nav__link">Доставка и оплата</a></li>
-            <li><a href="#" class="nav__link">Отзывы</a></li>
-            <li>
-              <a class="nav__logo" href="#">
-                <svg class="nav__svg">
-                  <use xlink:href="images/sprite.svg#logo"></use>
-                </svg>
-              </a>
-            </li>
-            <li><a href="#" class="nav__link">Спецпредложения</a></li>
-            <li><a href="#" class="nav__link">Контакты</a></li>
-            <li><a href="#" class="nav__link">Корзина</a></li>
-          </ul>
-        </div>
+      <div class="container">
+        <ul class="nav">
+          <li><a href="#" class="nav__link">Каталог</a></li>
+          <li><a href="#" class="nav__link">Доставка и оплата</a></li>
+          <li><a href="#" class="nav__link">Отзывы</a></li>
+          <li>
+            <a class="nav__logo" href="#">
+              <svg class="nav__svg">
+                <use xlink:href="images/sprite.svg#logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li><a href="#" class="nav__link">Спецпредложения</a></li>
+          <li><a href="#" class="nav__link">Контакты</a></li>
+          <li><a href="#" class="nav__link">Корзина</a></li>
+        </ul>
+      </div>
     </header>
     <main class="content">
       <div class="container">
-        <div class="section section__first">
-          <div class="row">
-            <div class="col">
-              <div>
-                <h1 class="header__text">
-                  Авторские букеты <br><i>в Петербурге</i></h1>
-                  <div class="subtext_top">
-                    Оригинальные свежие букеты с доставкой по всему городу
-                  </div>
+        <div class="section section_first">
+          <div class="row root__row-no-wrap">
+            <div class="col-4">
+              <h1 class="header__text">Авторские букеты <i>в Петербурге</i></h1>
+              <div class="subtext_top">
+                Оригинальные свежие букеты с доставкой по всему городу
+              </div>
+              <input type="button" class="button section_first__button" value="Смотреть каталог" />
+            </div>
+            <div class="col-auto">
+              <div class="section_first__wrap__wrap">
+                <img
+                  class="section_first__img"
+                  alt="Фото 1"
+                  src="@webRoot/images/1.jpg"
+                />
               </div>
             </div>
-            <div class="col">
-              <div>
-                <img alt="Фото 1" src="../images/1.jpg" />
-              </div>
-            </div>
-            <div class="col">
-              <div>
-                <img alt="Фото 2" src="../images/2.jpg" />
+            <div class="col-auto">
+              <div class="section_first__wrap__wrap">
+                <img
+                  class="section_first__img__img"
+                  alt="Фото 2"
+                  src="@webRoot/images/2.jpg"
+                />
               </div>
             </div>
           </div>
@@ -56,7 +62,7 @@
     </main>
 
     <footer class="footer footer_bg">
-      <div class="section">
+      <div class="container">
         <ul class="nav nav_alternative">
           <li>
             <a class="nav__logo" href="#">
@@ -70,7 +76,8 @@
           <li><a href="#" class="nav__link">Отзывы</a></li>
           <li><a href="#" class="nav__link">Спецпредложения</a></li>
           <li><a href="#" class="nav__link">Контакты</a></li>
-          <li> 1
+          <li>
+            1
             <div class="social">
               <a class="social__link">
                 <svg class="social__icon">

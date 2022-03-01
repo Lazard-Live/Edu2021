@@ -1,8 +1,8 @@
 .footer {
   flex: 0 0 auto;
-  color: var(--color-white);
+  color: $color-white;
 
   &_bg {
-    background-color: var(--color-primary);
+    background-color: $color-primary;
   }
 }

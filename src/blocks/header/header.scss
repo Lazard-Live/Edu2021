@@ -2,21 +2,21 @@
   display: flex;
   justify-content: center;
   z-index: 1;
-  margin: 25px 0 40px;
+  margin-top: 25px;
 
   &__text {
     margin: 0;
-    font-family: var(--font-secondary);
+    font-family: $font-secondary;
     font-weight: normal;
     font-style: normal;
-    color: var(--color-primary);
+    color: $color-primary;
     font-size: 44px;
     justify-content: center;
   }
 
   &_line {
-    border-top: 1px solid var(--color-primary);
-    border-bottom: 1px solid var(--color-primary);
+    border-top: 1px solid $color-primary;
+    border-bottom: 1px solid $color-primary;
   }
 
   &__img {

@@ -18,11 +18,11 @@
 
   &__link {
     text-decoration: none;
-    color: var(--color-primary);
+    color: $color-primary;
     cursor: pointer;
 
     &:hover {
-      color: var(--color-primary-active);
+      color: $color-primary-active;
     }
   }
 
@@ -40,11 +40,11 @@
 
   &_alternative {
     .nav__link {
-      color: var(--color-white);
+      color: $color-white;
       height: 100%;
     }
     .nav__link:hover {
-      color: var(--color-primary-active);
+      color: $color-primary-active;
     }
   }
 }
