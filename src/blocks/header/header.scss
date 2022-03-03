@@ -1,33 +1,9 @@
 .header {
   display: flex;
-  justify-content: center;
-  z-index: 1;
   margin-top: 25px;
-
-  &__text {
-    margin: 0;
-    font-family: $font-secondary;
-    font-weight: normal;
-    font-style: normal;
-    color: $color-primary;
-    font-size: 44px;
-    justify-content: center;
-  }
 
   &_line {
     border-top: 1px solid $color-primary;
     border-bottom: 1px solid $color-primary;
-  }
-
-  &__img {
-    position: absolute;
-
-    &_top {
-      top: 0;
-    }
-
-    &_bottom {
-      bottom: 0;
-    }
   }
 }
