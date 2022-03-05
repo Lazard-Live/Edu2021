@@ -4,6 +4,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: $font-primary;
+  color: $color-primary;
   line-height: 1.5;
   font-size: 16px;
   height: 100%;
@@ -15,3 +16,22 @@ body {
 .content {
   flex: 1 0 auto;
 }
+
+
+a:not([class]),
+a[class=''] {
+  @extend %transition;
+  text-decoration: none;
+  color: $color-primary;
+  font-weight: 600;
+
+  &:hover,
+  &:focus {
+    color: $color-primary-hover;
+  }
+
+  &:active {
+    color: $color-primary-active;
+  }
+}
+

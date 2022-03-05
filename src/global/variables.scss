@@ -3,6 +3,7 @@ $font-secondary: "Playfair Display", serif;
 $color-white: #fff;
 $color-white-active: #cccccc;
 $color-primary: #ae7c78;
+$color-primary-hover: darken($color-primary, 10%);
 $color-primary-active: #7a5754;
 $color-second: #d89999;
 $color-second-hover: darken($color-second, 15%);

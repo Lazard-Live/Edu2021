@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <title>Магазин цветов</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Магазин цветов (Edu2021)</title>
     <link rel="stylesheet" href="@webRoot/css/libs.min.css" />
     <link rel="stylesheet" href="@webRoot/css/style.css" />
     <script src="@webRoot/js/script.js"></script>
@@ -10,21 +12,7 @@
   <body>
     <header class="header header_line">
       <div class="container">
-        <ul class="nav">
-          <li><a href="#" class="nav__link">Каталог</a></li>
-          <li><a href="#" class="nav__link">Доставка и оплата</a></li>
-          <li><a href="#" class="nav__link">Отзывы</a></li>
-          <li>
-            <a class="nav__logo" href="#">
-              <svg class="nav__svg">
-                <use xlink:href="images/sprite.svg#logo"></use>
-              </svg>
-            </a>
-          </li>
-          <li><a href="#" class="nav__link">Спецпредложения</a></li>
-          <li><a href="#" class="nav__link">Контакты</a></li>
-          <li><a href="#" class="nav__link">Корзина</a></li>
-        </ul>
+        @include('../blocks/nav/nav.html')
       </div>
     </header>
     <main class="content">
@@ -45,7 +33,7 @@
                 <img
                   class="section-first__picture"
                   alt="Фото 1"
-                  src="@webRoot/images/1.jpg"
+                  src="@webRoot/images/section-first/1.jpg"
                 />
               </div>
             </div>
@@ -54,7 +42,7 @@
                 <img
                   class="section-first__picture"
                   alt="Фото 2"
-                  src="@webRoot/images/2.jpg"
+                  src="@webRoot/images/section-first/2.jpg"
                 />
               </div>
             </div>
@@ -78,27 +66,32 @@
           <li><a href="#" class="nav__link">Отзывы</a></li>
           <li><a href="#" class="nav__link">Спецпредложения</a></li>
           <li><a href="#" class="nav__link">Контакты</a></li>
+
           <li>
-            1
-            <div class="social">
-              <a class="social__link">
-                <svg class="social__icon">
-                  <use xlink:href="svg/sprite.svg#insta"></use>
+            <div class="icon">
+              <div class="icon__wrap footer__icon">
+                <svg class="icon__img ">
+                  <use xlink:href="@webRoot/images/sprite.svg#fb"></use>
                 </svg>
-              </a>
-              <a class="social__link">
-                <svg class="social__icon">
-                  <use xlink:href="images/sprite.svg#fb"></use>
+              </div>
+            </div>
+            <div class="icon">
+              <div class="icon__wrap footer__icon">
+                <svg class="icon__img ">
+                  <use xlink:href="@webRoot/images/sprite.svg#fb"></use>
                 </svg>
-              </a>
-              <a class="social__link">
-                <svg class="social__icon">
-                  <use xlink:href="svg/sprite.svg#tw"></use>
+              </div>
+            </div>
+            <div class="icon">
+              <div class="icon__wrap footer__icon">
+                <svg class="icon__img ">
+                  <use xlink:href="@webRoot/images/sprite.svg#fb"></use>
                 </svg>
-              </a>
+              </div>
             </div>
           </li>
         </ul>
+
       </div>
     </footer>
   </body>

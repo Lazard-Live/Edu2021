@@ -2,11 +2,17 @@
 @import "global/index";
 
 // ** blocks **
+@import "blocks/text";
 @import "blocks/title/title";
-@import "blocks/section-first/section-first";
+@import "blocks/logo";
+@import "blocks/icon/icon";
+@import "blocks/link";
 @import "blocks/subtitle/subtitle";
-@import "blocks/social/social";
+@import "blocks/section-first/section-first";
 @import "blocks/nav/nav";
 @import "blocks/header/header";
 @import "blocks/footer/footer";
 @import "blocks/button";
+@import "blocks/root";
+@import "blocks/block";
+@import "blocks/section";

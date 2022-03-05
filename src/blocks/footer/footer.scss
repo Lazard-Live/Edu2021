@@ -5,4 +5,12 @@
   &_bg {
     background-color: $color-primary;
   }
+
+  &__icon {
+    .icon__img {
+      fill: $color-white;
+      width: 20px;
+      height: 20px;
+    }
+  }
 }
