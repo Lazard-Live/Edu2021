@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Магазин цветов (Edu2021)</title>
+    <link rel="stylesheet" href="@webRoot/css/libs.min.css" />
+    <link rel="stylesheet" href="@webRoot/css/style.css" />
+    <script src="@webRoot/js/script.js"></script>
+  </head>
+  <body>
+    <header class="header header_line">
+      <div class="container">
+        @include('../blocks/nav/nav.html')
+      </div>
+    </header>
+    <main class="content">
+      <div class="section section-first">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1 class="section-first__text">
+                Авторские букеты <i>в Петербурге</i>
+              </h1>
+              <div class="subtitle section-first__subtitle">
+                Оригинальные свежие букеты с доставкой по всему городу
+              </div>
+              <input type="button" class="button" value="Смотреть каталог" />
+            </div>
+            <div class="col-lg-4">
+              <div class="section-first__wrap section-first__wrap-margin-top">
+                <img
+                  class="section-first__picture"
+                  alt="Фото 1"
+                  src="@webRoot/images/section-first/1.jpg"
+                />
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="section-first__wrap">
+                <img
+                  class="section-first__picture"
+                  alt="Фото 2"
+                  src="@webRoot/images/section-first/2.jpg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer footer_bg">
+      <div class="container">
+        <ul class="nav nav_alternative">
+          <li>
+            <a class="nav__logo" href="#">
+              <svg class="nav__svg">
+                <use xlink:href="images/sprite.svg#logo_white"></use>
+              </svg>
+            </a>
+          </li>
+          <li><a href="#" class="nav__link">Каталог</a></li>
+          <li><a href="#" class="nav__link">Доставка и оплата</a></li>
+          <li><a href="#" class="nav__link">Отзывы</a></li>
+          <li><a href="#" class="nav__link">Спецпредложения</a></li>
+          <li><a href="#" class="nav__link">Контакты</a></li>
+
+          <li>
+            <div class="icon">
+              <div class="icon__wrap footer__icon">
+                <svg class="icon__img ">
+                  <use xlink:href="@webRoot/images/sprite.svg#fb"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="icon">
+              <div class="icon__wrap footer__icon">
+                <svg class="icon__img ">
+                  <use xlink:href="@webRoot/images/sprite.svg#fb"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="icon">
+              <div class="icon__wrap footer__icon">
+                <svg class="icon__img ">
+                  <use xlink:href="@webRoot/images/sprite.svg#fb"></use>
+                </svg>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+$font-primary: "Montserrat", sans-serif;
+$font-secondary: "Playfair Display", serif;
+$color-white: #fff;
+$color-white-active: #cccccc;
+$color-primary: #ae7c78;
+$color-primary-hover: darken($color-primary, 10%);
+$color-primary-active: #7a5754;
+$color-second: #d89999;
+$color-second-hover: darken($color-second, 15%);
+$color-second-active: darken($color-second, 30%);
+
+$point-sm: 576px;
+$point-md: 768px;
+$point-lg: 992px;
+$point-xl: 1200px;
+
+%transition {
+  transition: 0.2s ease;
+}
+
+@mixin screen-up($point) {
+  $is-sm: $point == sm;
+  $is-md: $point == md;
+  $is-lg: $point == lg;
+
+  @media (min-width: if($is-sm, $point-sm, if($is-md, $point-md, if($is-lg, $point-lg, $point-xl)))) {
+    @content;
+  }
+}
+
+@mixin screen-down($point) {
+  $is-sm: $point == sm;
+  $is-md: $point == md;
+  $is-lg: $point == lg;
+
+  @media (max-width: if($is-sm, $point-sm - 1px, if($is-md, $point-md - 1px, if($is-lg, $point-lg - 1px, $point-xl - 1px)))) {
+    @content;
+  }
+}

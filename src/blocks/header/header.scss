@@ -1,0 +1,9 @@
+.header {
+  display: flex;
+  margin-top: 25px;
+
+  &_line {
+    border-top: 1px solid $color-primary;
+    border-bottom: 1px solid $color-primary;
+  }
+}

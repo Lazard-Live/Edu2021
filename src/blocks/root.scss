@@ -1,0 +1,9 @@
+.root {
+  &__row-no-wrap {
+    flex-wrap: nowrap;
+  }
+
+  &__block {
+    margin: 32px 0;
+  }
+}

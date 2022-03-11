@@ -1,0 +1,88 @@
+$gap: 8px;
+$columns: 12;
+
+.container {
+    margin: 0 auto;
+
+    @include screen-up(sm) {
+        max-width: 540px;
+    }
+
+    @include screen-up(md) {
+        max-width: 720px;
+    }
+
+    @include screen-up(lg) {
+        max-width: 960px;
+    }
+
+    @include screen-up(xl) {
+        max-width: 1170px;
+    }
+}
+
+.container,
+.container-fluid {
+    width: 100%;
+    padding: 0 $gap;
+    position: relative;
+}
+
+.row {
+    margin: (-$gap * 2) (-$gap) 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    & + & {
+        margin-top: 0;
+    }
+}
+
+[class|='col'] {
+    width: 100%;
+    margin-top: $gap * 2;
+    padding: 0 $gap;
+}
+
+.col {
+    flex: 1 0;
+}
+
+.col-auto {
+    width: auto;
+}
+
+@for $i from 1 through $columns {
+    .col-#{$i} {
+        width: 100% / $columns * $i;
+        flex: 0 0 (100% / $columns * $i);
+    }
+
+    @include screen-up(sm) {
+        .col-sm-#{$i} {
+            width: 100% / $columns * $i;
+            flex: 0 0 (100% / $columns * $i);
+        }
+    }
+
+    @include screen-up(md) {
+        .col-md-#{$i} {
+            width: 100% / $columns * $i;
+            flex: 0 0 (100% / $columns * $i);
+        }
+    }
+
+    @include screen-up(lg) {
+        .col-lg-#{$i} {
+            width: 100% / $columns * $i;
+            flex: 0 0 (100% / $columns * $i);
+        }
+    }
+
+    @include screen-up(xl) {
+        .col-xl-#{$i} {
+            width: 100% / $columns * $i;
+            flex: 0 0 (100% / $columns * $i);
+        }
+    }
+}
