@@ -1,0 +1,53 @@
+$color-fb: #1877f2;
+$color-fb-active: darken($color-fb, 10%);
+$color-tw: #1da1f2;
+$color-tw-active: darken($color-tw, 10%);
+$color-inst: #DD2A7B;
+$color-inst-active: darken($color-inst, 10%);
+
+.social {
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__link {
+        @extend %transition;
+        padding: 6px;
+        width: 20px;
+        height: 20px;
+        fill: $color-white;
+
+        &:hover {
+            fill: $color-primary;
+        }
+
+        &:active {
+            fill: $color-primary-active;
+        }
+
+        &_color_fb:hover {
+            fill: $color-fb;
+        }
+
+        &_color_fb:active {
+            fill: $color-fb-active;
+        }
+
+        &_color_tw:hover {
+            fill: $color-tw;
+        }
+
+        &_color_tw:active {
+            fill: $color-tw-active;
+        }
+
+        &_color_inst:hover {
+            fill: $color-inst;
+        }
+
+        &_color_inst:active {
+            fill: $color-inst-active;
+        }
+    }
+}
