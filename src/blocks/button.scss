@@ -1,11 +1,15 @@
 .button {
+  display: block;
   @extend %transition;
   font-family: $font-primary;
   color: $color-white;
   background: $color-second;
   border-radius: 40px;
   border: none;
-  padding: 30px 69px;
+  line-height: 80px;
+  text-align: center;
+  width: 285px;
+  height: 80px;
   cursor: pointer;
 
   &:hover {
