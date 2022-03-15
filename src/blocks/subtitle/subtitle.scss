@@ -3,7 +3,11 @@
   font-size: 16px;
   font-weight: normal;
 
-  &_size_md {
+  &_size_lg {
     font-size: 24px;
+  }
+
+  &_bold {
+    font-weight: 600;
   }
 }
