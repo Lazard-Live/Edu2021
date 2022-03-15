@@ -11,9 +11,7 @@
   </head>
   <body>
     <header class="header header_line">
-      <div class="container">
-        @include('../blocks/nav/nav.html')
-      </div>
+      <div class="container">@include('../blocks/nav/nav.html')</div>
     </header>
     <main class="content">
       <div class="section section-first">
@@ -47,6 +45,47 @@
               </div>
             </div>
           </div>
+          <div class="row">
+            <div class="col">
+              <div class="row">
+                <div class="col-2">
+                  @include('../blocks/icon/icon.html', { name: 'bus', classes: 'root__promo-icon' })
+                </div>
+                <div class="col">
+                  <div class="subtitle subtitle_bold">
+                    Быстрая доставка
+                  </div>
+                  Можем собрать букет и передать его в доставку всего за час
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="row">
+                <div class="col-2">
+                  @include('../blocks/icon/icon.html', { name: 'bouquet', classes: 'root__promo-icon' })
+                </div>
+                <div class="col">
+                  <div class="subtitle subtitle_bold">
+                    Быстрая доставка
+                  </div>
+                  Можем собрать букет и передать его в доставку всего за час
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="row">
+                <div class="col-2">
+                  @include('../blocks/icon/icon.html', { name: 'cam', classes: 'root__promo-icon' })
+                </div>
+                <div class="col">
+                  <div class="subtitle subtitle_bold">
+                    Быстрая доставка
+                  </div>
+                  Можем собрать букет и передать его в доставку всего за час
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -66,11 +105,8 @@
           <li><a href="#" class="nav__link">Отзывы</a></li>
           <li><a href="#" class="nav__link">Спецпредложения</a></li>
           <li><a href="#" class="nav__link">Контакты</a></li>
-          <li>
-            @include('../blocks/social/social.html')
-          </li>
+          <li>@include('../blocks/social/social.html')</li>
         </ul>
-
       </div>
     </footer>
   </body>
