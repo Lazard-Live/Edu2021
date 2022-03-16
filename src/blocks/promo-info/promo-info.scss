@@ -1,0 +1,12 @@
+.promo-info {
+  display: flex;
+
+  &__icon {
+    fill: $color-primary;
+    padding: 0 18px;
+  }
+
+  &__subtitle {
+    font-weight: bold;
+  }
+}
