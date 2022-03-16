@@ -1,0 +1,15 @@
+.promo-info {
+  display: flex;
+
+  &__icon {
+    fill: $color-primary;
+  }
+
+  &__text {
+    margin-left: 20px;
+  }
+
+  &__subtitle {
+    font-weight: bold;
+  }
+}

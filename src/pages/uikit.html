@@ -1,270 +1,1 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Uikit Edu2021</title>
-    <link rel="stylesheet" href="@webRoot/css/libs.min.css" />
-    <link rel="stylesheet" href="@webRoot/css/style.css" />
-    <script src="@webRoot/js/script.js"></script>
-  </head>
-  <body class="root">
-    <main class="root__content">
-      <div class="container">
-        <!-- Текст -->
-        <div class="block root__block">
-          <div class="block__name">Текст</div>
-
-          <div class="block__body">
-            <div class="block__item">
-              <div class="text">
-                <p>
-                  Lorem ipsum dolor sit amet,
-                  <a href="#">consectetur adipisicing elit</a>. Accusantium
-                  alias eius ex laboriosam magni pariatur reprehenderit suscipit
-                  veniam vitae voluptatibus? A consequuntur iusto labore laborum
-                  minima optio sapiente sit voluptates.
-                </p>
-
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
-                  adipisci at atque dolorem doloribus et eveniet fugit in
-                  inventore, molestias nam nesciunt numquam provident
-                  repellendus rerum sapiente similique tempora totam.
-                </p>
-
-                <ul>
-                  <li>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Accusamus cum distinctio error iure iusto minus officia quia
-                    recusandae.
-                    <a href="#">Beatae corporis ea harum itaque</a>
-                    molestiae molestias.
-                  </li>
-                  <li>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Cupiditate, fuga placeat! Adipisci autem distinctio eligendi
-                    repellendus saepe. A autem consequatur delectus hic minus
-                    obcaecati?
-                    <ul>
-                      <li>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Accusamus cum distinctio error iure iusto minus
-                        officia quia recusandae.
-                        <a href="#">Beatae corporis ea harum itaque</a>
-                        molestiae molestias.
-                      </li>
-                      <li>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Cupiditate, fuga placeat! Adipisci autem
-                        distinctio eligendi repellendus saepe. A autem
-                        consequatur delectus hic minus obcaecati?
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-
-                <ol>
-                  <li>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Accusamus cum distinctio error iure iusto minus officia quia
-                    recusandae.
-                    <a href="#">Beatae corporis ea harum itaque</a>
-                    molestiae molestias.
-                  </li>
-                  <li>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Cupiditate, fuga placeat! Adipisci autem distinctio eligendi
-                    repellendus saepe. A autem consequatur delectus hic minus
-                    obcaecati?
-                    <ol>
-                      <li>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Accusamus cum distinctio error iure iusto minus
-                        officia quia recusandae.
-                        <a href="#">Beatae corporis ea harum itaque</a>
-                        molestiae molestias.
-                      </li>
-                      <li>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Accusamus cum distinctio error iure iusto minus
-                        officia quia recusandae.
-                        <a href="#">Beatae corporis ea harum itaque</a>
-                        molestiae molestias.
-                      </li>
-                      <li>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Cupiditate, fuga placeat! Adipisci autem
-                        distinctio eligendi repellendus saepe. A autem
-                        consequatur delectus hic minus obcaecati?
-                        <ol>
-                          <li>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Accusamus cum distinctio error iure iusto
-                            minus officia quia recusandae.
-                            <a href="#">Beatae corporis ea harum itaque</a>
-                            molestiae molestias.
-                          </li>
-                          <li>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Cupiditate, fuga placeat! Adipisci autem
-                            distinctio eligendi repellendus saepe. A autem
-                            consequatur delectus hic minus obcaecati?
-                          </li>
-                        </ol>
-                      </li>
-                    </ol>
-                  </li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Иконки (Спрайт) -->
-        <div class="block root__block">
-          <div class="block__name">Иконки (спрайт)</div>
-
-          <div class="block__body">
-            <div class="block__item block__item_wide">
-              <div class="row">
-                <div class="col-1">
-                  @include('../blocks/icon/icon.html', { name: 'fb' })
-                </div>
-                <div class="col-1">
-                  @include('../blocks/icon/icon.html', { name: 'tw' })
-                </div>
-                <div class="col-1">
-                  @include('../blocks/icon/icon.html', { name: 'inst' })
-                </div>
-                <div class="col-1">
-                  @include('../blocks/icon/icon.html', { name: 'bouquet' })
-                </div>
-                <div class="col-1">
-                  @include('../blocks/icon/icon.html', { name: 'bus' })
-                </div>
-                <div class="col-1">
-                  @include('../blocks/icon/icon.html', { name: 'cam' })
-                </div>
-                <div class="col-1">
-                  @include('../blocks/icon/icon.html', { name: 'logo' })
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Иконки социальных сетей -->
-        <div class="block root__block">
-          <div class="block__name">Блок иконок социальных сетей</div>
-
-          <div class="block__body">
-            <div class="block__item block__item_dark">
-                @include('../blocks/social/social.html')
-            </div>
-          </div>
-        </div>
-        <!-- Логотип -->
-        <div class="block root__block">
-          <div class="block__name">Логотип</div>
-
-          <div class="block__body">
-            <div class="block__item block__item_wide">
-              <div class="row">
-                <div class="col-1">
-                  <a href="/">
-                    @include('../blocks/icon/icon.html', { name: 'logo',
-                    classes: 'logo' })
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Кнопка -->
-        <div class="block root__block">
-          <div class="block__name">Кнопка</div>
-
-          <div class="block__body">
-            <div class="block__item">
-              <div class="button">.button</div>
-            </div>
-
-            <div class="block__item">
-              <a class="button" href="#">a.button</a>
-            </div>
-
-            <div class="block__item">
-              <input
-                class="button"
-                type="button"
-                value="input.button[type='button']"
-              />
-            </div>
-
-            <div class="block__item">
-              <button class="button">button.button</button>
-            </div>
-          </div>
-        </div>
-        <!-- Ссылка -->
-        <div class="block root__block">
-          <div class="block__name">Ссылка</div>
-
-          <div class="block__body">
-            <div class="block__item">
-              <a href="#" class="link">a.link</a>
-            </div>
-          </div>
-        </div>
-        <!-- Заголовки -->
-        <div class="block root__block">
-          <div class="block__name">Заголовки</div>
-
-          <div class="block__body">
-            <div class="block__item block__item_wide">
-              <div class="title">.title</div>
-            </div>
-
-            <div class="block__item block__item_wide">
-              <div class="title title_size_lg">.title.title_size_lg</div>
-            </div>
-
-            <div class="block__item block__item_wide">
-              <div class="title title_size_sm">.title.title_size_sm</div>
-            </div>
-          </div>
-        </div>
-        <!-- Подзаголоки -->
-        <div class="block root__block">
-          <div class="block__name">Подзаголовки</div>
-
-          <div class="block__body">
-            <div class="block__item block__item_wide">
-              <div class="subtitle">.subtitle</div>
-            </div>
-
-            <div class="block__item block__item_wide">
-              <div class="subtitle subtitle_bold">.subtitle.subtitle_bold</div>
-            </div>
-
-            <div class="block__item block__item_wide">
-              <div class="subtitle subtitle_size_lg">
-                .subtitle.subtitle_size_lg
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Меню -->
-        <div class="block root__block">
-          <div class="block__name">Меню</div>
-
-          <div class="block__body">
-            <div class="block__item block__item_wide">
-              @include('../blocks/nav/nav.html')
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-  </body>
-</html>
+<!DOCTYPE html><html lang="ru"><head>    <meta charset="UTF-8"/>    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>    <title>Uikit Edu2021</title>    <link rel="stylesheet" href="@webRoot/css/libs.min.css"/>    <link rel="stylesheet" href="@webRoot/css/style.css"/>    <script src="@webRoot/js/script.js"></script></head><body class="root"><main class="root__content">    <div class="container">        <!-- Текст -->        <div class="block root__block">            <div class="block__name">Текст</div>            <div class="block__body">                <div class="block__item">                    <div class="text">                        <p>                            Lorem ipsum dolor sit amet,                            <a href="#">consectetur adipisicing elit</a>. Accusantium                            alias eius ex laboriosam magni pariatur reprehenderit suscipit                            veniam vitae voluptatibus? A consequuntur iusto labore laborum                            minima optio sapiente sit voluptates.                        </p>                        <p>                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A                            adipisci at atque dolorem doloribus et eveniet fugit in                            inventore, molestias nam nesciunt numquam provident                            repellendus rerum sapiente similique tempora totam.                        </p>                        <ul>                            <li>                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.                                Accusamus cum distinctio error iure iusto minus officia quia                                recusandae.                                <a href="#">Beatae corporis ea harum itaque</a>                                molestiae molestias.                            </li>                            <li>                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.                                Cupiditate, fuga placeat! Adipisci autem distinctio eligendi                                repellendus saepe. A autem consequatur delectus hic minus                                obcaecati?                                <ul>                                    <li>                                        Lorem ipsum dolor sit amet, consectetur adipisicing                                        elit. Accusamus cum distinctio error iure iusto minus                                        officia quia recusandae.                                        <a href="#">Beatae corporis ea harum itaque</a>                                        molestiae molestias.                                    </li>                                    <li>                                        Lorem ipsum dolor sit amet, consectetur adipisicing                                        elit. Cupiditate, fuga placeat! Adipisci autem                                        distinctio eligendi repellendus saepe. A autem                                        consequatur delectus hic minus obcaecati?                                    </li>                                </ul>                            </li>                        </ul>                        <ol>                            <li>                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.                                Accusamus cum distinctio error iure iusto minus officia quia                                recusandae.                                <a href="#">Beatae corporis ea harum itaque</a>                                molestiae molestias.                            </li>                            <li>                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.                                Cupiditate, fuga placeat! Adipisci autem distinctio eligendi                                repellendus saepe. A autem consequatur delectus hic minus                                obcaecati?                                <ol>                                    <li>                                        Lorem ipsum dolor sit amet, consectetur adipisicing                                        elit. Accusamus cum distinctio error iure iusto minus                                        officia quia recusandae.                                        <a href="#">Beatae corporis ea harum itaque</a>                                        molestiae molestias.                                    </li>                                    <li>                                        Lorem ipsum dolor sit amet, consectetur adipisicing                                        elit. Accusamus cum distinctio error iure iusto minus                                        officia quia recusandae.                                        <a href="#">Beatae corporis ea harum itaque</a>                                        molestiae molestias.                                    </li>                                    <li>                                        Lorem ipsum dolor sit amet, consectetur adipisicing                                        elit. Cupiditate, fuga placeat! Adipisci autem                                        distinctio eligendi repellendus saepe. A autem                                        consequatur delectus hic minus obcaecati?                                        <ol>                                            <li>                                                Lorem ipsum dolor sit amet, consectetur adipisicing                                                elit. Accusamus cum distinctio error iure iusto                                                minus officia quia recusandae.                                                <a href="#">Beatae corporis ea harum itaque</a>                                                molestiae molestias.                                            </li>                                            <li>                                                Lorem ipsum dolor sit amet, consectetur adipisicing                                                elit. Cupiditate, fuga placeat! Adipisci autem                                                distinctio eligendi repellendus saepe. A autem                                                consequatur delectus hic minus obcaecati?                                            </li>                                        </ol>                                    </li>                                </ol>                            </li>                        </ol>                    </div>                </div>            </div>        </div>        <!-- Иконки (Спрайт) -->        <div class="block root__block">            <div class="block__name">Иконки (спрайт)</div>            <div class="block__body">                <div class="block__item block__item_wide">                    <div class="row">                        <div class="col-1">                            @include('../blocks/icon/icon.html', { name: 'fb' })                        </div>                        <div class="col-1">                            @include('../blocks/icon/icon.html', { name: 'tw' })                        </div>                        <div class="col-1">                            @include('../blocks/icon/icon.html', { name: 'inst' })                        </div>                        <div class="col-1">                            @include('../blocks/icon/icon.html', { name: 'bouquet' })                        </div>                        <div class="col-1">                            @include('../blocks/icon/icon.html', { name: 'bus' })                        </div>                        <div class="col-1">                            @include('../blocks/icon/icon.html', { name: 'cam' })                        </div>                        <div class="col-1">                            @include('../blocks/icon/icon.html', { name: 'logo' })                        </div>                    </div>                </div>            </div>        </div>        <!-- Иконки социальных сетей -->        <div class="block root__block">            <div class="block__name">Блок иконок социальных сетей</div>            <div class="block__body">                <div class="block__item block__item_dark">                    @include('../blocks/social/social.html')                </div>            </div>        </div>        <!-- Логотип -->        <div class="block root__block">            <div class="block__name">Логотип</div>            <div class="block__body">                <div class="block__item block__item_wide">                    <div class="row">                        <div class="col-1">                            <a href="/">                                @include('../blocks/icon/icon.html', { name: 'logo',                                classes: 'logo' })                            </a>                        </div>                    </div>                </div>            </div>        </div>        <!-- Кнопка -->        <div class="block root__block">            <div class="block__name">Кнопка</div>            <div class="block__body">                <div class="block__item">                    <div class="button">.button</div>                </div>                <div class="block__item">                    <a class="button" href="#">a.button</a>                </div>                <div class="block__item">                    <input                            class="button"                            type="button"                            value="input.button[type='button']"                    />                </div>                <div class="block__item">                    <button class="button">button.button</button>                </div>            </div>        </div>        <!-- Ссылка -->        <div class="block root__block">            <div class="block__name">Ссылка</div>            <div class="block__body">                <div class="block__item">                    <a href="#" class="link">a.link</a>                </div>            </div>        </div>        <!-- Заголовки -->        <div class="block root__block">            <div class="block__name">Заголовки</div>            <div class="block__body">                <div class="block__item block__item_wide">                    <div class="title">.title</div>                </div>                <div class="block__item block__item_wide">                    <div class="title title_size_lg">.title.title_size_lg</div>                </div>                <div class="block__item block__item_wide">                    <div class="title title_size_sm">.title.title_size_sm</div>                </div>            </div>        </div>        <!-- Подзаголоки -->        <div class="block root__block">            <div class="block__name">Подзаголовки</div>            <div class="block__body">                <div class="block__item block__item_wide">                    <div class="subtitle">.subtitle</div>                </div>                <div class="block__item block__item_wide">                    <div class="subtitle subtitle_bold">.subtitle.subtitle_bold</div>                </div>                <div class="block__item block__item_wide">                    <div class="subtitle subtitle_size_lg">                        .subtitle.subtitle_size_lg                    </div>                </div>            </div>        </div>        <!-- Меню -->        <div class="block root__block">            <div class="block__name">Меню</div>            <div class="block__body">                <div class="block__item block__item_wide">                    @include('../blocks/nav/nav.html')                </div>            </div>        </div>        <!-- Промо инфо -->        <div class="block root__block">            <div class="block__name">Промо инфо</div>            <div class="block__body">                <div class="block__item block__item_wide">                    <div class="row">                        <div class="col-4">                            @include('../blocks/promo-info/promo-info.html', {                            icon: 'bus',                            subtitle: 'Быстрая доставка',                            text: 'Можем собрать букет и передать его в доставку всего за час.'                            })                        </div>                        <div class="col-4">                            @include('../blocks/promo-info/promo-info.html', {                            icon: 'bouquet',                            subtitle: 'Всегда свежие цветы',                            text: 'Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.'                            })                        </div>                        <div class="col-4">                            @include('../blocks/promo-info/promo-info.html', {                            icon: 'cam',                            subtitle: 'Отправляем фото цветов',                            text: 'Перед доставкой сделаем фотографию букета и отправим вам.'                            })                        </div>                    </div>                </div>            </div>        </div>    </div></main></body></html>
