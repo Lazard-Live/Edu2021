@@ -45,44 +45,27 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
-              <div class="row">
-                <div class="col-2">
-                  @include('../blocks/icon/icon.html', { name: 'bus', classes: 'root__promo-icon' })
-                </div>
-                <div class="col">
-                  <div class="subtitle subtitle_bold">
-                    Быстрая доставка
-                  </div>
-                  Можем собрать букет и передать его в доставку всего за час
-                </div>
+            <div class="row">
+              <div class="col-4">
+                @include('../blocks/promo-info/promo-info.html', {
+                icon: 'bus',
+                subtitle: 'Быстрая доставка',
+                text: 'Можем собрать букет и передать его в доставку всего за час.'
+                })
               </div>
-            </div>
-            <div class="col">
-              <div class="row">
-                <div class="col-2">
-                  @include('../blocks/icon/icon.html', { name: 'bouquet', classes: 'root__promo-icon' })
-                </div>
-                <div class="col">
-                  <div class="subtitle subtitle_bold">
-                    Быстрая доставка
-                  </div>
-                  Можем собрать букет и передать его в доставку всего за час
-                </div>
+              <div class="col-4">
+                @include('../blocks/promo-info/promo-info.html', {
+                icon: 'bouquet',
+                subtitle: 'Всегда свежие цветы',
+                text: 'Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.'
+                })
               </div>
-            </div>
-            <div class="col">
-              <div class="row">
-                <div class="col-2">
-                  @include('../blocks/icon/icon.html', { name: 'cam', classes: 'root__promo-icon' })
-                </div>
-                <div class="col">
-                  <div class="subtitle subtitle_bold">
-                    Быстрая доставка
-                  </div>
-                  Можем собрать букет и передать его в доставку всего за час
-                </div>
+              <div class="col-4">
+                @include('../blocks/promo-info/promo-info.html', {
+                icon: 'cam',
+                subtitle: 'Отправляем фото цветов',
+                text: 'Перед доставкой сделаем фотографию букета и отправим вам.'
+                })
               </div>
             </div>
           </div>
