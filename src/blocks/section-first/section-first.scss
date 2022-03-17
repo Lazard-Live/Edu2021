@@ -24,6 +24,10 @@
   &__wrap {
     position: relative;
     padding-bottom: 100%;
+
+    &_margin-top {
+      margin-top: 40px;
+    }
   }
 
   &__picture {
