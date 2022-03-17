@@ -1,4 +1,8 @@
 .root {
+  &__title-section-align {
+    text-align: center;
+  }
+
   &__row-no-wrap {
     flex-wrap: nowrap;
   }
