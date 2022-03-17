@@ -1,5 +1,10 @@
 .section-first {
   padding-top: 82px;
+  padding-bottom: 80px;
+
+  &__row-padding-bottom {
+    padding-bottom: 32px;
+  }
 
   &__text {
     margin: 0;
@@ -19,10 +24,6 @@
   &__wrap {
     position: relative;
     padding-bottom: 100%;
-
-    &-margin-top {
-      margin-top: 40px;
-    }
   }
 
   &__picture {
