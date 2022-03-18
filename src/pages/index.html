@@ -14,7 +14,7 @@
       <div class="container">@include('../blocks/nav/nav.html')</div>
     </header>
     <main class="content">
-      <div class="section section-first">
+      <section class="section section-first">
         <div class="container">
           <div class="row section-first__row-padding-bottom">
             <div class="col-4">
@@ -45,32 +45,49 @@
               </div>
             </div>
           </div>
-            <div class="row">
-              <div class="col-4">
-                @include('../blocks/promo-info/promo-info.html', {
+          <div class="row">
+            <div class="col-4">
+              <!-- prettier-ignore -->
+              @include('../blocks/promo-info/promo-info.html', {
                 icon: 'bus',
                 subtitle: 'Быстрая доставка',
                 text: 'Можем собрать букет и передать его в доставку всего за час.'
-                })
-              </div>
-              <div class="col-4">
-                @include('../blocks/promo-info/promo-info.html', {
+              })
+            </div>
+            <div class="col-4">
+              <!-- prettier-ignore -->
+              @include('../blocks/promo-info/promo-info.html', {
                 icon: 'bouquet',
                 subtitle: 'Всегда свежие цветы',
                 text: 'Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.'
-                })
-              </div>
-              <div class="col-4">
-                @include('../blocks/promo-info/promo-info.html', {
+              })
+            </div>
+            <div class="col-4">
+              <!-- prettier-ignore -->
+              @include('../blocks/promo-info/promo-info.html', {
                 icon: 'cam',
                 subtitle: 'Отправляем фото цветов',
                 text: 'Перед доставкой сделаем фотографию букета и отправим вам.'
-                })
-              </div>
+              })
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="title root__title-section-align">Популярные букеты</div>
+          <!-- prettier-ignore -->
+          @include('../blocks/popular/popular.html', {
+            title: 'Букет «Нежность»',
+            text: 'Элегантный букет, который станет отличным подарком на день рождения или юбилей.',
+            other: '30 × 40 см',
+            price: '3600 руб.',
+            img: {
+              url: '@webRoot/images/popular/nezhnost.png'
+            },
+          })
+        </div>
+      </section>
     </main>
 
     <footer class="footer footer_bg">
