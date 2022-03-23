@@ -1,0 +1,40 @@
+.catalog {
+  position: relative;
+  padding-bottom: 442px;
+  background: no-repeat center;
+  border-radius: 10px;
+
+  &__info {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    &::after {
+      @extend %transition;
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-color: $color-primary;
+      opacity: 0.6;
+      border-radius: 10px;
+    }
+  }
+
+  &__title,
+  &__subtitle {
+    z-index: 1;
+    color: $color-white;
+    text-transform: inherit;
+  }
+
+  &__link:hover {
+    .catalog__info::after {
+      opacity: 0.8;
+    }
+  }
+}

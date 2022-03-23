@@ -312,6 +312,26 @@
             </div>
           </div>
         </div>
+
+        <!-- Карточка каталога -->
+        <div class="block root__block">
+          <div class="block__name">Карточка блока каталога</div>
+
+          <div class="block__body">
+            <div class="block__item block__item_wide">
+              <div class="row">
+                <div class="col-4">
+                  <!-- prettier-ignore -->
+                  @include('../blocks/catalog/catalog.html', {
+                    url: '@webRoot/images/catalog/1.png',
+                    title: 'Свадебные букеты',
+                    subtitle: 'Букеты для невест'
+                  })
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   </body>
