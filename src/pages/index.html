@@ -95,9 +95,8 @@
         <ul class="nav nav_alternative">
           <li>
             <a class="nav__logo" href="#">
-              <svg class="nav__svg">
-                <use xlink:href="images/sprite.svg#logo_white"></use>
-              </svg>
+              @include('../blocks/icon/icon.html', { name: 'logo',
+              classes: 'logo logo_white' })
             </a>
           </li>
           <li><a href="#" class="nav__link">Каталог</a></li>

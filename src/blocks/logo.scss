@@ -1,24 +1,29 @@
 .logo {
     @extend %transition;
     display: inline-block;
-    padding: 8px 16px;
-    font-weight: bold;
-    font-size: 20px;
     fill:$color-primary;
-    letter-spacing: 1px;
     text-decoration: none;
     user-select: none;
 
+    .icon__wrap {
+        padding-bottom: 60%;
+    }
+
     &:hover,
     &:focus {
-        color: $color-white;
+        fill: $color-primary-hover;
     }
 
     &:active {
-        color: $color-white;
+        fill: $color-primary-active;
     }
 
     &_white {
         fill:$color-white;
+
+        &:hover,
+        &:focus {
+            fill: $color-white-active;
+        }
     }
 }
