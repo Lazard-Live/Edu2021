@@ -4,32 +4,38 @@
   background: no-repeat center;
   border-radius: 10px;
 
-  &:before {
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: block;
-    content: "";
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    background-color: $color-primary;
-    opacity: 0.5;
-  }
-
   &__info {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: absolute;
-    height: 100%;
-    width: 100%;
+
+    &::after {
+      @extend %transition;
+      z-index: 0;
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-color: $color-primary;
+      opacity: 0.6;
+      border-radius: 10px;
+    }
   }
 
   &__title,
   &__subtitle {
+    z-index: 1;
     color: $color-white;
     text-transform: inherit;
+  }
+
+  &__link:hover {
+    .catalog__info::after {
+      opacity: 0.8;
+    }
   }
 }
