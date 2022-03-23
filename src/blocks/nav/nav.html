@@ -4,9 +4,8 @@
     <li><a href="#" class="nav__link">Отзывы</a></li>
     <li>
         <a class="nav__logo" href="#">
-            <svg class="nav__svg">
-                <use xlink:href="images/sprite.svg#logo"></use>
-            </svg>
+            @include('../icon/icon.html', { name: 'logo',
+            classes: 'logo' })
         </a>
     </li>
     <li><a href="#" class="nav__link">Спецпредложения</a></li>
