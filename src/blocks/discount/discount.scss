@@ -1,0 +1,19 @@
+.discount {
+  display: flex;
+  background-color: $color-primary;
+
+  &__row-center {
+    justify-content: center;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $color-white;
+  }
+
+  &__title {
+    padding-bottom: 24px;
+  }
+}

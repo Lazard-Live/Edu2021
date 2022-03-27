@@ -3,8 +3,11 @@
   font-family: $font-secondary;
   font-size: 36px;
   font-weight: 500;
-  text-transform: uppercase;
   line-height: 1.2;
+
+  &_uppercase {
+    text-transform: uppercase;
+  }
 
   &_size_lg {
     font-size: 44px;
