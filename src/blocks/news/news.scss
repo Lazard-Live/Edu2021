@@ -1,0 +1,28 @@
+.news {
+  &__subtitle {
+    padding: 40px 0;
+  }
+
+  &__social {
+    .social__link {
+      fill: $color-primary;
+    }
+  }
+
+  &__picture-grid {
+    display: grid;
+    grid-gap: 20px;
+
+    &__img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+
+      &_2row {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+    }
+  }
+}
