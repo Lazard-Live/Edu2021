@@ -130,13 +130,54 @@
                     на первый заказ
                   </div>
                   <div class="subtitle subtitle_size_lg">
-                    Если заказываете у нас букет впервые — при оформлении заказа введите
-                    промокод «Botanika2021» и получите скидку 10%.
+                    Если заказываете у нас букет впервые — при оформлении заказа
+                    введите промокод «Botanika2021» и получите скидку 10%.
                   </div>
                 </div>
               </div>
             </div>
             <img src="@webRoot/images/discount/1.png" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="title title_size_lg title_bold root__title-section-align">4 шага к идеальному букету</div>
+
+          <div class="row">
+            <div class="col-3">
+              <!-- prettier-ignore -->
+              @include('../blocks/step/step.html', {
+              icon: 'site',
+              subtitle: 'Заказ',
+              text: 'Выберите понравившийся букет из каталога и оформите заказ'
+              })
+            </div>
+            <div class="col-3">
+              <!-- prettier-ignore -->
+              @include('../blocks/step/step.html', {
+              icon: 'human',
+              subtitle: 'Уточнение деталей',
+              text: 'Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали'
+              })
+            </div>
+            <div class="col-3">
+              <!-- prettier-ignore -->
+              @include('../blocks/step/step.html', {
+              icon: 'card',
+              subtitle: 'Оплата',
+              text: 'Оплатить заказ можно онлайн на сайте или при получении'
+              })
+            </div>
+            <div class="col-3">
+              <!-- prettier-ignore -->
+              @include('../blocks/step/step.html', {
+              icon: 'bus',
+              subtitle: 'Доставка',
+              text: 'Курьер позвонит за час до прибытия и доставит заказ вовремя'
+              })
+            </div>
           </div>
         </div>
       </section>

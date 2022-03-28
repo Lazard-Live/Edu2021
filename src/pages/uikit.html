@@ -147,7 +147,13 @@
                   @include('../blocks/icon/icon.html', { name: 'cam' })
                 </div>
                 <div class="col-1">
-                  @include('../blocks/icon/icon.html', { name: 'logo' })
+                  @include('../blocks/icon/icon.html', { name: 'site' })
+                </div>
+                <div class="col-1">
+                  @include('../blocks/icon/icon.html', { name: 'human' })
+                </div>
+                <div class="col-1">
+                  @include('../blocks/icon/icon.html', { name: 'card' })
                 </div>
               </div>
             </div>
@@ -326,6 +332,26 @@
                     url: '@webRoot/images/catalog/1.png',
                     title: 'Свадебные букеты',
                     subtitle: 'Букеты для невест'
+                  })
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Каточка шагов -->
+        <div class="block root__block">
+          <div class="block__name">Карточка шагов</div>
+
+          <div class="block__body">
+            <div class="block__item block__item_wide">
+              <div class="row">
+                <div class="col-3">
+                  <!-- prettier-ignore -->
+                  @include('../blocks/step/step.html', {
+                  icon: 'site',
+                  subtitle: 'Заказ',
+                  text: 'Выберите понравившийся букет из каталога и оформите заказ.'
                   })
                 </div>
               </div>
