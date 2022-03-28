@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,6 +14,7 @@
       <div class="container">@include('../blocks/nav/nav.html')</div>
     </header>
     <main class="content">
+      <!-- Первый блок -->
       <section class="section section-first">
         <div class="container">
           <div class="row section-first__row-padding-bottom">
@@ -73,6 +74,7 @@
           </div>
         </div>
       </section>
+      <!-- Популярное-->
       <section class="section">
         <div class="container">
           <div class="title root__title-section-align">Популярные букеты</div>
@@ -88,6 +90,7 @@
           })
         </div>
       </section>
+      <!-- Переход по разделам -->
       <section class="section">
         <div class="container">
           <div class="row">
@@ -118,7 +121,7 @@
           </div>
         </div>
       </section>
-
+      <!-- Скидки -->
       <section class="section">
         <div class="container">
           <div class="discount">
@@ -140,10 +143,12 @@
           </div>
         </div>
       </section>
-
+      <!-- Шаги -->
       <section class="section">
         <div class="container">
-          <div class="title title_size_lg title_bold root__title-section-align">4 шага к идеальному букету</div>
+          <div class="title title_size_lg title_bold root__title-section-align">
+            4 шага к идеальному букету
+          </div>
 
           <div class="row">
             <div class="col-3">
@@ -177,6 +182,33 @@
               subtitle: 'Доставка',
               text: 'Курьер позвонит за час до прибытия и доставит заказ вовремя'
               })
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Блок для подписок в соц. сетях -->
+      <section class="section">
+        <div class="container">
+          <div class="news">
+            <div class="row">
+              <div class="col-6">
+                <div class="title title_size_lg">
+                  Следите за нашими новостями
+                </div>
+                <div class="subtitle subtitle_size_lg news__subtitle">
+                  Подписывайтесь на наши <br />
+                  соцсети и узнавайте <br />
+                  о новинках и акциях первым
+                </div>
+                  @include('../blocks/social/social.html', {classes: 'news__social'})
+              </div>
+              <div class="col-6">
+                <div class="news__picture-grid">
+                  <img src="@webRoot/images/news/1.jpg" class="news__picture-grid__img">
+                  <img src="@webRoot/images/news/2.jpg" class="news__picture-grid__img">
+                  <img src="@webRoot/images/news/3.jpg" class="news__picture-grid__img news__picture-grid__img_2row">
+                </div>
+              </div>
             </div>
           </div>
         </div>
