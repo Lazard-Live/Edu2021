@@ -126,20 +126,17 @@
         <div class="container">
           <div class="discount">
             <div class="discount__info">
-              <div class="row discount__row-center">
-                <div class="col-8">
-                  <div class="title title_size_lg discount__title">
-                    Скидка 10% <br />
-                    на первый заказ
-                  </div>
-                  <div class="subtitle subtitle_size_lg">
-                    Если заказываете у нас букет впервые — при оформлении заказа
-                    введите промокод «Botanika2021» и получите скидку 10%.
-                  </div>
-                </div>
+              <div class="title title_size_lg discount__title">
+                Скидка 10% <br />
+                на первый заказ
+              </div>
+              <div class="subtitle subtitle_size_lg">
+                Если заказываете у нас букет впервые — при оформлении заказа
+                введите промокод «Botanika2021» и получите скидку 10%.
               </div>
             </div>
-            <img src="@webRoot/images/discount/1.png" />
+
+            <div style="background-image: url('@webRoot/images/discount/1.png')" class="discount__img"/>
           </div>
         </div>
       </section>
@@ -200,13 +197,23 @@
                   соцсети и узнавайте <br />
                   о новинках и акциях первым
                 </div>
-                  @include('../blocks/social/social.html', {classes: 'news__social'})
+                @include('../blocks/social/social.html', {classes:
+                'news__social'})
               </div>
               <div class="col-6">
                 <div class="news__picture-grid">
-                  <img src="@webRoot/images/news/1.jpg" class="news__picture-grid__img">
-                  <img src="@webRoot/images/news/2.jpg" class="news__picture-grid__img">
-                  <img src="@webRoot/images/news/3.jpg" class="news__picture-grid__img news__picture-grid__img_2row">
+                  <img
+                    src="@webRoot/images/news/1.jpg"
+                    class="news__picture-grid__img"
+                  />
+                  <img
+                    src="@webRoot/images/news/2.jpg"
+                    class="news__picture-grid__img"
+                  />
+                  <img
+                    src="@webRoot/images/news/3.jpg"
+                    class="news__picture-grid__img news__picture-grid__img_2row"
+                  />
                 </div>
               </div>
             </div>
