@@ -1,0 +1,17 @@
+.feedback {
+  border: 1px solid $color-primary;
+  padding: 40px 0;
+
+  &__title {
+    padding-bottom: 40px;
+  }
+
+  &__text {
+    margin: 0 40px;
+    padding-bottom: 14px;
+  }
+
+  &__row {
+    padding-bottom: 24px;
+  }
+}
