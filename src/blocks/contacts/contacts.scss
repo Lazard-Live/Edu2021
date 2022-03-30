@@ -1,0 +1,36 @@
+.contacts {
+  position: relative;
+  height: 644px;
+
+  &__maps {
+    position: absolute;
+    width: 100%;
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__card {
+    margin-top: 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 36px 36px;
+    width: 386px;
+    height: 520px;
+    background-color: $color-bg-contact;
+    border-radius: 12px;
+  }
+
+  &__subtitle {
+    margin-top: 28px;
+  }
+
+  &__text {
+    margin-top: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+  }
+}
